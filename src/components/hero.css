@@ -1,0 +1,70 @@
+.hero_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 80px;
+  padding-bottom: 150px;
+  border-bottom: black 0.5px solid;
+  margin: 0;
+  background-image: url(../img/background6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  overflow: hidden;
+  line-height: 1.2;
+  gap: none;
+}
+.hero--name {
+  display: block;
+  animation-name: textMotion;
+  animation-duration: 1.5s;
+  font-size: 7vw;
+  padding-left: 15vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+@keyframes textMotion {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.title_container {
+  padding-left: 20vw;
+}
+.hero--title {
+  display: block;
+  font-size: 6vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  overflow: hidden;
+  border-right: 0.15em solid black;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.13rem;
+  animation: typing 3.25s steps(40, end), blink-caret 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}

@@ -1,0 +1,49 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav--button_container {
+  display: flex;
+  gap: 15px;
+}
+
+.logo {
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 40px;
+  transition: background-image 1s;
+}
+
+.logo:hover {
+  background-image: url(../img/dot.png);
+}
+
+@keyframes flipLogo {
+  0% {
+  }
+
+  30% {
+    transform: perspective(400px) scaleY(0);
+  }
+  55% {
+    transform: perspective(400px) scaleY(0);
+  }
+
+  100% {
+    transform: perspective(400px) scaleY(1);
+  }
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  border-bottom: black 2px solid;
+}
